@@ -1,0 +1,32 @@
+.input_section {
+    display: flex;
+    gap: 5px;
+
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+
+.todos {
+    padding-top: 1rem;
+    padding-left: 2px;
+}
+
+.form-check-input{
+    cursor: pointer;
+}
+
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noTodos {
+    text-align: center;
+    margin-top: 2rem;
+}
