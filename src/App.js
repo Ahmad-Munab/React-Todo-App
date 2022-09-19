@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="container-md">
-      <h1 className="title">Todo List App</h1>
+      <h1 className="title">Todo List</h1>
       <InputForm todos = {todos} setTodos = {setTodos}/>
       <TodoList todos={ todos } toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
     </div>
