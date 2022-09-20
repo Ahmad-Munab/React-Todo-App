@@ -1,4 +1,5 @@
 import {useRef } from "react"
+import {  } from "react-icons/";
 
 const InputForm = ({ todos, setTodos }) => {
   const input = useRef()
@@ -31,7 +32,7 @@ const InputForm = ({ todos, setTodos }) => {
         placeholder="Enter task"
         ref = {input}
        />
-      <button className="btn btn-primary" onClick={handleSubmition}>Add</button>
+      <button className="btn btn-primary" onClick={handleSubmition}><b>Add</b></button>
     </form>
   )
 }

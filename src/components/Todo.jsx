@@ -1,4 +1,5 @@
 import React from "react";
+import { HiTrash } from "react-icons/hi";
 
 function Todo({ todo, toggleTodo, deleteTodo }) {
   function handleCheckbox() {
@@ -19,11 +20,11 @@ function Todo({ todo, toggleTodo, deleteTodo }) {
           defaultChecked={todo.completed}
           onChange={handleCheckbox} />
         <label style={{ textDecoration: todo.completed && "line-through" }}>
-          {todo.task}
+          <b>{todo.task}</b>
         </label>
       </div>
       <button className="btn btn-sm btn-danger" onClick={handleDeleting}>
-        Delete
+        <HiTrash className="deleteIcon"/>
       </button>
     </div>
   );
