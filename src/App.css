@@ -1,50 +1,50 @@
-*{
-    box-sizing: border-box;
-  }
-
-body {
-    min-height: 100%;
-    max-width: 100vw;
+* {
+  box-sizing: border-box;
 }
 
-.input_section {
-    display: flex;
-    gap: 5px;
+body {
+  min-height: 100%;
+  max-width: 100vw;
+}
+
+.input-section {
+  display: flex;
+  gap: 0.6vw;
 }
 
 .title {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    font-weight: bolder;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
 }
 
 .todos {
-    padding-top: 1rem;
-    padding-left: 2px;
+  padding-top: 1rem;
+  padding-left: 2px;
 }
 
-.form-check-input{
-    cursor: pointer;
+.form-check-input {
+  cursor: pointer;
 }
 
 .form-check {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .noTodos {
-    text-align: center;
-    margin-top: 2.7rem;
+  text-align: center;
+  margin-top: 2.7rem;
 }
 
 .btn-sm {
-    margin-top: 0.3rem;
-    margin-left: 0.4rem;
-    width: min-content;
+  margin-top: 0.3rem;
+  margin-left: 0.4rem;
+  width: min-content;
 }
 
 .icon {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }

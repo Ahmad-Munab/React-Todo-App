@@ -1,8 +1,7 @@
 import React from "react";
-import { HiTrash } from "react-icons/hi";
+import { FaWindowClose } from "react-icons/fa";
 
-function Todo({ todo, toggleTodo, deleteTodo}) {
-
+function Todo({ todo, toggleTodo, deleteTodo }) {
   function handleCheckbox() {
     toggleTodo(todo.id);
   }
@@ -10,7 +9,6 @@ function Todo({ todo, toggleTodo, deleteTodo}) {
   function handleDeleting() {
     deleteTodo(todo.id);
   }
-
 
   return (
     <div className="form-check hstack">
@@ -22,13 +20,20 @@ function Todo({ todo, toggleTodo, deleteTodo}) {
           defaultChecked={todo.completed}
           onChange={handleCheckbox}
         />
-        <label style={{ textDecoration: todo.completed && "line-through", textDecorationColor: todo.completed && "rgba(33,37,41,1)", textDecorationThickness: todo.completed && "2.5px"  }}>
+        <label
+          style={{
+            textDecoration: todo.completed && "line-through",
+            textDecorationColor: todo.completed && "rgba(33,37,41,1)",
+            textDecorationThickness: todo.completed && "2.5px",
+            textDecorationStyle: todo.completed && "solid",
+          }}
+        >
           <b>{todo.task}</b>
         </label>
       </div>
       <button className="btn btn-sm btn-danger" onClick={handleDeleting}>
-            <HiTrash className="icon" />
-          </button>
+        <FaWindowClose className="icon" />
+      </button>
     </div>
   );
 }

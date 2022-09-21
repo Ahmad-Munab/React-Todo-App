@@ -22,7 +22,7 @@ const InputForm = ({ todos, setTodos }) => {
   }
 
   return (
-    <form  className="input_section">
+    <div  className="input-group">
       <input
         autoFocus
         className="form-control" 
@@ -31,7 +31,7 @@ const InputForm = ({ todos, setTodos }) => {
         ref = {input}
        />
       <button className="btn btn-primary" onClick={handleSubmition}><b>Add</b></button>
-    </form>
+    </div>
   )
 }
 
