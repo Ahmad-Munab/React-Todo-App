@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 
+body {
+    min-height: 100%;
+    max-width: 100vw;
+}
+
 .input_section {
     display: flex;
     gap: 5px;
@@ -31,14 +36,15 @@
 
 .noTodos {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 2.7rem;
 }
 
-.btn-danger {
-    margin-top: 0.5rem;
-    width:min-content;
+.btn-sm {
+    margin-top: 0.3rem;
+    margin-left: 0.4rem;
+    width: min-content;
 }
 
-.deleteIcon {
+.icon {
     font-size: 1.3rem;
 }

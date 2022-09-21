@@ -14,8 +14,6 @@ const InputForm = ({ todos, setTodos }) => {
     const task = input.current.value
 
     if (task === "" || task.length > 100) return objection()
-
-    console.log(task.length)
     
     setTodos(prevTodos => {
       return [...prevTodos, {id: Date.now(), task: task, completed: false}]
